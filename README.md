@@ -10,7 +10,10 @@ Projeto da aula: cadastro de produtos com imagem, painel de vendas com carrinho 
 1. Criar o banco no MariaDB:
 
 ```sql
-CREATE DATABASE loja;
+CREATE DATABASE IF NOT EXISTS loja;
+CREATE USER IF NOT EXISTS 'loja'@'localhost' IDENTIFIED BY 'loja';
+GRANT ALL PRIVILEGES ON loja.* TO 'loja'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
 As tabelas são criadas automaticamente quando a API sobe. Se o banco estiver vazio, a API cadastra um produto de exemplo (Caneca de cerâmica, com imagem .png). Usuário e senha do banco ficam em `Api/db/conn.js`.

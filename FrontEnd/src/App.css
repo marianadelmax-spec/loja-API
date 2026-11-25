@@ -1,0 +1,31 @@
+.produto-imagem {
+  height: 180px;
+  object-fit: cover;
+}
+
+.sem-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+.miniatura {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.preview-imagem {
+  max-width: 160px;
+  max-height: 160px;
+  border-radius: 8px;
+  display: block;
+}
+
+.carrinho {
+  position: sticky;
+  top: 1rem;
+}

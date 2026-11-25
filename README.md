@@ -2,7 +2,7 @@
 
 Projeto da aula: cadastro de produtos com imagem, painel de vendas com carrinho e finalização da venda.
 
-- `Api/`: Node.js, Express, Sequelize e MariaDB (porta 5000)
+- `Api/`: Node.js, Express, Sequelize e MariaDB (porta 5055 — a 5000 é usada pelo AirPlay do macOS)
 - `FrontEnd/`: React (porta 3000)
 
 ## Como rodar

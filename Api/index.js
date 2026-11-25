@@ -5,7 +5,7 @@ const conn = require('./db/conn.js');
 const criarProdutoExemplo = require('./helpers/seed.js');
 
 const app = express();
-const port = 5000;
+const port = 5055;
 
 app.use(express.json());
 app.use(cors());

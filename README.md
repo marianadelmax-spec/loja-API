@@ -13,7 +13,7 @@ Projeto da aula: cadastro de produtos com imagem, painel de vendas com carrinho 
 CREATE DATABASE loja;
 ```
 
-As tabelas são criadas automaticamente quando a API sobe. Usuário e senha do banco ficam em `Api/db/conn.js`.
+As tabelas são criadas automaticamente quando a API sobe. Se o banco estiver vazio, a API cadastra um produto de exemplo (Caneca de cerâmica, com imagem .png). Usuário e senha do banco ficam em `Api/db/conn.js`.
 
 2. API:
 

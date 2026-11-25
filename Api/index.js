@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const conn = require('./db/conn.js');
+const criarProdutoExemplo = require('./helpers/seed.js');
 
 const app = express();
 const port = 5000;
@@ -24,6 +25,7 @@ conn
         console.log('Conexão com o banco de dados realizada com sucesso!');
         return conn.sync({ alter: true });
     })
+    .then(() => criarProdutoExemplo())
     .then(() => {
         app.listen(port, () => console.log(`API rodando em http://localhost:${port}`));
     })
